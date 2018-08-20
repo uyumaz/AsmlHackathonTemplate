@@ -23,10 +23,12 @@ public:
    void update();
    void initialize(const __FlashStringHelper *prefix, const __FlashStringHelper *password, Scheduler& taskScheduler);
 
-private:
-   painlessMesh       m_mesh;
+   void sendBroadcast(String& message);
 
+private:
    static const uint16_t PORT;
+
+   painlessMesh       m_mesh;
 
    void receivedCb(uint32_t from, String& msg);
 

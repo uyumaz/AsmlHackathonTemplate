@@ -20,10 +20,6 @@ const uint16_t MeshNetwork::PORT = 5555;
 //! \note Does not construct and initialize in one go to be able to initialize after serial debug port has been opened.
 MeshNetwork::MeshNetwork()
 {
-   // Set debug messages before init() so that you can see startup messages.
-   //m_mesh.setDebugMsgTypes( ERROR | STARTUP );  // To enable all: ERROR | MESH_STATUS | CONNECTION | SYNC | COMMUNICATION | GENERAL | MSG_TYPES | REMOTE
-   //m_mesh.init( prefix, password, &m_userTaskScheduler, MeshNetwork::PORT );
-
    m_mesh.onReceive(std::bind(&MeshNetwork::receivedCb, this, std::placeholders::_1, std::placeholders::_2));
    //m_mesh.onNewConnection();
    //m_mesh.onChangedConnections();
@@ -43,6 +39,11 @@ void MeshNetwork::initialize(const __FlashStringHelper *prefix, const __FlashStr
 void MeshNetwork::update()
 {
    m_mesh.update();
+}
+
+void MeshNetwork::sendBroadcast(String &message)
+{
+   m_mesh.sendBroadcast(message, true); // true: include self.
 }
 
 void MeshNetwork::receivedCb(uint32_t from, String& msg)
