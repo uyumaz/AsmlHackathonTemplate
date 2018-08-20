@@ -9,7 +9,7 @@ Scheduler               taskScheduler;
 Facilities::MeshNetwork meshNetwork;
 
 
-# TODO: create a task that broadcasts a message. Maybe add a main class which creates the task and stores it
+// TODO: create a task that broadcasts a message. Maybe add a main class which creates the task and stores it
 
 
 //! Called once at board startup.
