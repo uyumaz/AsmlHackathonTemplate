@@ -5,10 +5,11 @@ All of the world’s top chipmakers like Samsung, Intel and TSMC use our technol
 
 ## The ASML C++ Hackaton
 The second half of 2018 ASML is organizing a C++ Hackaton. The hackaton assigment tries to approach the daily challenges an ASML software employee faces in a:
-* embedded
-* high performance
-* real time
-* distributed system
+* embedded,
+* high performance,
+* real time,
+* distributed
+system.
 
 
 This project forms the basis and head-start of the ASML C++ Hackaton assignment.
