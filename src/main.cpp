@@ -3,15 +3,17 @@
 #include "Debug.hpp"
 #include "painlessMesh.h"
 #include "Facilities_MeshNetwork.hpp"
-#include "Tasks_ExampleTask.hpp"
+#include "Tasks_ExampleTransmitTask.hpp"
+#include "Tasks_ExampleDisplayTask.hpp"
 
 // Translation unit local variables
 namespace {
 
-Scheduler               taskScheduler;
+Scheduler                  taskScheduler;
 
-Facilities::MeshNetwork meshNetwork;
-Tasks::ExampleTask      exampleTask(meshNetwork);
+Facilities::MeshNetwork    meshNetwork;
+Tasks::ExampleTransmitTask exampleTransmitTask(meshNetwork);
+Tasks::ExampleDisplayTask  exampleDisplayTask(meshNetwork);
 }
 
 //! Called once at board startup.
@@ -22,9 +24,11 @@ void setup()
    // Create MeshNetwork
    meshNetwork.initialize(F("Mesh-Prefix"), F("Mesh-Secret-Password"), taskScheduler);
 
-   // Add task
-   taskScheduler.addTask( exampleTask );
-   exampleTask.enable();
+   // Create and add tasks.
+   taskScheduler.addTask( exampleTransmitTask );
+   taskScheduler.addTask( exampleDisplayTask );
+   exampleTransmitTask.enable();
+   exampleDisplayTask.enable();
 
 
    MY_DEBUG_PRINTLN(F("Setup completed"));
