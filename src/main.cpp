@@ -5,14 +5,14 @@
 #include "Facilities_MeshNetwork.hpp"
 #include "Tasks_ExampleTask.hpp"
 
-// Module local variables
+// Translation unit local variables
+namespace {
+
 Scheduler               taskScheduler;
 
 Facilities::MeshNetwork meshNetwork;
 Tasks::ExampleTask      exampleTask(meshNetwork);
-
-// TODO: create a task that broadcasts a message. Maybe add a main class which creates the task and stores it
-
+}
 
 //! Called once at board startup.
 void setup()
@@ -35,5 +35,4 @@ void loop()
 {
    taskScheduler.execute();
    meshNetwork.update();
-    // put your main code here, to run repeatedly:
 }

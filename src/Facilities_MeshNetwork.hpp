@@ -16,7 +16,10 @@ namespace Facilities {
 
 class MeshNetwork
 {
+
 public:
+   typedef uint32_t NodeId;
+
    MeshNetwork();
    ~MeshNetwork() {};
 
@@ -24,13 +27,15 @@ public:
    void initialize(const __FlashStringHelper *prefix, const __FlashStringHelper *password, Scheduler& taskScheduler);
 
    void sendBroadcast(String& message);
+   NodeId getMyNodeId();
+
 
 private:
    static const uint16_t PORT;
 
    painlessMesh       m_mesh;
 
-   void receivedCb(uint32_t from, String& msg);
+   void receivedCb(NodeId transmitterNodeId, String& msg);
 
 
 };

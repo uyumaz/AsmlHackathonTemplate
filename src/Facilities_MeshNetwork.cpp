@@ -21,10 +21,9 @@ const uint16_t MeshNetwork::PORT = 5555;
 MeshNetwork::MeshNetwork()
 {
    m_mesh.onReceive(std::bind(&MeshNetwork::receivedCb, this, std::placeholders::_1, std::placeholders::_2));
-   //m_mesh.onNewConnection();
-   //m_mesh.onChangedConnections();
-   //m_mesh.onNodeTimeAdjusted();
-
+   //m_mesh.onNewConnection(...);
+   //m_mesh.onChangedConnections(...);
+   //m_mesh.onNodeTimeAdjusted(...);
 }
 
 // Initialize mesh network.
@@ -43,12 +42,18 @@ void MeshNetwork::update()
 
 void MeshNetwork::sendBroadcast(String &message)
 {
-   m_mesh.sendBroadcast(message, true); // true: include self.
+   MY_DEBUG_PRINT("Broadcasting message: "); MY_DEBUG_PRINTLN(message);
+   m_mesh.sendBroadcast(message, false); // true: include self.
 }
 
-void MeshNetwork::receivedCb(uint32_t from, String& msg)
+MeshNetwork::NodeId MeshNetwork::getMyNodeId()
 {
-   MY_DEBUG_PRINTF("Data received from node: %u; msg: %s\n", from, msg.c_str());
+   return m_mesh.getNodeId();
+}
+
+void MeshNetwork::receivedCb(NodeId transmitterNodeId, String& msg)
+{
+   MY_DEBUG_PRINTF("Data received from node: %u; msg: %s\n", transmitterNodeId, msg.c_str());
 }
 
 

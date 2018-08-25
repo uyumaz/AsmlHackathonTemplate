@@ -25,12 +25,9 @@ ExampleTask::ExampleTask(Facilities::MeshNetwork& mesh) :
 
 void ExampleTask::execute()
 {
-   String msg = "Hello from node ";
-   //TODO: msg += m_mesh.getNodeId();
+   String msg = F("Ping from node ");
+   msg += m_mesh.getMyNodeId();
    m_mesh.sendBroadcast( msg );
-   setInterval( random( TASK_SECOND * 1, TASK_SECOND * 5 ));
-
-   MY_DEBUG_PRINTLN("Executing ExampleTask");
 }
 
 } // namespace Tasks
