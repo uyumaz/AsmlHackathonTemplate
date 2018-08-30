@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.com/uyumaz/AsmlHackathonTemplate.svg?token=JU8dufh1zu96AKEXb48N&branch=master)](https://travis-ci.com/uyumaz/AsmlHackathonTemplate)
+
 # ![alt text](https://staticwww.asml.com/imglib/structure/asml_logo.png "ASML Netherlands B.V.")
 
 ASML Netherlands B.V. provides chipmakers with everything they need - hardware, software and services - to mass produce patterns on silicon, helping to increase the value and lower the cost of a chip. Our key technology is the lithography system, which brings together high-tech hardware and advanced software to control the chip manufacturing process down to the picometer.
