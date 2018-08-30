@@ -14,8 +14,6 @@ system.
 
 This project forms the basis and head-start of the ASML C++ Hackaton assignment.
 
-Assignment details see: [Wiki](../../wiki)
-
-
 # Assignment details
 
+See: [Wiki](../../wiki)
