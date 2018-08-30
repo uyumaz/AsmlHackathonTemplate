@@ -14,24 +14,8 @@ system.
 
 This project forms the basis and head-start of the ASML C++ Hackaton assignment.
 
+Assignment details see: [Wiki](../../wiki)
+
 
 # Assignment details
 
-## Hardware
-* 4 Huzzah Feather ESP8266@80MHz :
-   * 80KB user RAM
-   * 4MB flash
-* 1 Chain of four MAX7219 8x8 dot matrix LED modules
-* 1 Five wire female-female jumper wires
-
-
-The four chained together MAX7219 modules can be connected to the Huzzah Feather
-as follows:
-
-|MAX7219    |  ESP8266                    | Description                      |
-|-----------|-----------------------------|----------------------------------|
-|VCC        |	3V3                        | +3.3V (max 400mA)                |
-|GND	      |  GND                        | Ground (0V)                      |
-|DIN	      |  GPIO13/MOSI                | Serial Peripheral Interface Data |
-|CS	      |  Any GPIO (e.g. GPIO16) except MISO  | Chip select             |
-|CLK	      |  GPIO14/SCK                 | Clock pulse                      |
