@@ -23,11 +23,19 @@ public:
    MeshNetwork();
    ~MeshNetwork() {};
 
+   // Disallow copy-ing
+	MeshNetwork(const MeshNetwork& other) = delete;
+	MeshNetwork(MeshNetwork&& other) = delete;
+	MeshNetwork& operator=(const MeshNetwork& other) = delete;
+
    void update();
    void initialize(const __FlashStringHelper *prefix, const __FlashStringHelper *password, Scheduler& taskScheduler);
 
    void sendBroadcast(String& message);
    NodeId getMyNodeId();
+
+   void onReceive(receivedCallback_t receivedCallback);
+
 
 
 private:

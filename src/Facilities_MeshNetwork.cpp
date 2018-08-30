@@ -4,7 +4,8 @@
 // Created by Sander van Woensel / Umut Uyumaz
 // Copyright (c) 2018 ASML Netherlands B.V. All rights reserved.
 //
-//! Mesh Network wrapper class.
+//! Mesh Network wrapper class to provide a container to add specific
+//! mesh network behaviour.
 
 #include "Facilities_MeshNetwork.hpp"
 
@@ -43,12 +44,17 @@ void MeshNetwork::update()
 void MeshNetwork::sendBroadcast(String &message)
 {
    MY_DEBUG_PRINT("Broadcasting message: "); MY_DEBUG_PRINTLN(message);
-   m_mesh.sendBroadcast(message, false); // true: include self.
+   m_mesh.sendBroadcast(message, false); // false: Do not include self.
 }
 
 MeshNetwork::NodeId MeshNetwork::getMyNodeId()
 {
    return m_mesh.getNodeId();
+}
+
+void MeshNetwork::onReceive(receivedCallback_t receivedCallback)
+{
+   m_mesh.onReceive(receivedCallback);
 }
 
 void MeshNetwork::receivedCb(NodeId transmitterNodeId, String& msg)

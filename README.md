@@ -15,7 +15,7 @@ system.
 This project forms the basis and head-start of the ASML C++ Hackaton assignment.
 
 
-# Quick start
+# Assignment details
 
 ## Hardware
 * 4 Huzzah Feather ESP8266@80MHz :
@@ -33,5 +33,5 @@ as follows:
 |VCC        |	3V3                        | +3.3V (max 400mA)                |
 |GND	      |  GND                        | Ground (0V)                      |
 |DIN	      |  GPIO13/MOSI                | Serial Peripheral Interface Data |
-|CS	      |  Any GPIO except MISO (e.g. GPIO16) | Chip select              |
-|CLK	      |  GPIO14 (SCK)               | Clock pulse                      |
+|CS	      |  Any GPIO (e.g. GPIO16) except MISO  | Chip select             |
+|CLK	      |  GPIO14/SCK                 | Clock pulse                      |
