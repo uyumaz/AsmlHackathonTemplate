@@ -18,4 +18,4 @@ This project forms the basis and head-start of the ASML C++ Hackaton assignment.
 
 # Assignment details
 
-See: [Wiki](../../wiki)
+See: [Wiki](../../wiki/Introduction)
