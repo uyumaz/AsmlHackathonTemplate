@@ -25,7 +25,7 @@ namespace Tasks {
 class ExampleDisplayTask : public Task
 {
 public:
-   ExampleDisplayTask(Facilities::MeshNetwork& mesh);
+   explicit ExampleDisplayTask(Facilities::MeshNetwork& mesh);
    ~ExampleDisplayTask() {};
 
    // Disallow copy-ing

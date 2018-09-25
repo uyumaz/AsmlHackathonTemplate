@@ -20,7 +20,7 @@ namespace Tasks {
 class ExampleTransmitTask : public Task
 {
 public:
-   ExampleTransmitTask(Facilities::MeshNetwork& mesh);
+   explicit ExampleTransmitTask(Facilities::MeshNetwork& mesh);
    ~ExampleTransmitTask() {};
 
    // Disallow copy-ing
