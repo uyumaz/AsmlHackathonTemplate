@@ -1,4 +1,5 @@
 [![Build Status](https://api.travis-ci.com/uyumaz/AsmlHackathonTemplate.svg?token=JU8dufh1zu96AKEXb48N&branch=master)](https://travis-ci.com/uyumaz/AsmlHackathonTemplate)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8bdb7dd841804f119f90a98737141eeb)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uyumaz/AsmlHackathonTemplate&amp;utm_campaign=Badge_Grade)
 
 # ![alt text](https://staticwww.asml.com/imglib/structure/asml_logo.png "ASML Netherlands B.V.")
 
