@@ -1,7 +1,7 @@
 [![Build Status](https://api.travis-ci.com/uyumaz/AsmlHackathonTemplate.svg?token=JU8dufh1zu96AKEXb48N&branch=master)](https://travis-ci.com/uyumaz/AsmlHackathonTemplate)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8bdb7dd841804f119f90a98737141eeb)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uyumaz/AsmlHackathonTemplate&amp;utm_campaign=Badge_Grade)
 
-![ASML digital gold Hackathon 2018](https://github.com/uyumaz/AsmlHackathonTemplate/blob/master/asml_digital_gold_white_bg_small.png)
+<img align="right" src="https://github.com/uyumaz/AsmlHackathonTemplate/blob/master/asml_digital_gold_white_bg_small.png">
 # ![ASML](https://staticwww.asml.com/imglib/structure/asml_logo.png "ASML Netherlands B.V.")
 
 ASML Netherlands B.V. provides chipmakers with everything they need - hardware, software and services - to mass produce patterns on silicon, helping to increase the value and lower the cost of a chip. Our key technology is the lithography system, which brings together high-tech hardware and advanced software to control the chip manufacturing process down to the picometer.
