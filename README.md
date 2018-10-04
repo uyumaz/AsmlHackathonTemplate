@@ -7,7 +7,7 @@ ASML Netherlands B.V. provides chipmakers with everything they need - hardware, 
 All of the world’s top chipmakers like Samsung, Intel and TSMC use our technology, enabling the waves of innovation that help tackle the world’s toughest challenges.
 
 ## The ASML Digital Gold Hackathon 2018
-The second half of 2018 ASML is organizing a C++ Hackaton. The hackaton assigment tries to approach the daily challenges an ASML software employee faces in a:
+The second half of 2018 ASML is organizing a C++ Hackathon. The hackathon assignment tries to approach the daily challenges an ASML software employee faces in a:
 * embedded,
 * high performance,
 * real time,
@@ -15,7 +15,7 @@ The second half of 2018 ASML is organizing a C++ Hackaton. The hackaton assigmen
 system.
 
 
-This project forms the basis and head-start of the ASML C++ Hackaton assignment.
+This project forms the basis and head-start of the ASML C++ Hackathon assignment.
 
 # Assignment details
 
