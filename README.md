@@ -3,8 +3,6 @@
 
 <img align="right" src="https://github.com/uyumaz/AsmlHackathonTemplate/blob/master/asml_digital_gold_white_bg_small.png"/>
 
-# ![ASML](https://staticwww.asml.com/imglib/structure/asml_logo.png "ASML Netherlands B.V.")
-
 ASML Netherlands B.V. provides chipmakers with everything they need - hardware, software and services - to mass produce patterns on silicon, helping to increase the value and lower the cost of a chip. Our key technology is the lithography system, which brings together high-tech hardware and advanced software to control the chip manufacturing process down to the picometer.
 All of the world’s top chipmakers like Samsung, Intel and TSMC use our technology, enabling the waves of innovation that help tackle the world’s toughest challenges.
 
